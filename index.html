@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>A</span>.dwivedi</a>
+        <nav class="navbar" id="sidemenu">
+            <a href="#header" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services"> Services</a>
+            <a href="#portfolio">My work</a>
+            <a href="#contact">Contact</a>
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+        </nav>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm <br> <span>A</span>bhishek Dwivedi</h1>
+            <h3>Frontend Developer</h3>
+            <p>I am a web developer having 1 year of experience in Coforge ltd.I am also have great knowledge of Java, C & C++ language. I am looking for. FRONT-END web development job opportunities.</p>
+            <div class="btn-box">
+                <a href="#">Hire me </a>
+                <a href="#">Lets talk</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>  
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+    <!-- -----------------------------------About----------------------------- -->
+    <div id="about"></div>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Image.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>I am Frontent Developer having 1.4 years of experience in Coforge ltd. I am also have great knowledge of Java and C languages.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active_links" onclick="opentab('skills')">Skills </p>
+
+
+                    <p  class="tab-links"  onclick="opentab('experience')">Experience </p>
+
+                    <p  class="tab-links"  onclick="opentab('education')">Education </p>
+                </div>
+
+                <div class="tab-contains active-tab" id="skills">
+                    <ul>
+                        
+                        <li><span>HTML</span></li>
+
+                        <li><span>CSS</span></li>
+                        <li><span>JavaScript</span></li>
+
+                        <li><span>React js</span></li>
+
+                        <li><span>MYSQL</span></li>
+
+                        <li><span>Bootstrap</span></li>
+
+                        <li><span>AWS</span></li>
+
+                        <li><span>JAVA</span></li>
+
+                        <li><span></span></li>
+
+                    </ul>
+                </div>   
+                
+                <div class="tab-contains" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Web Developer</li>
+                        <p>As a front-end developer, I collaborate with designers and backend developers to create user-friendly interfaces. My role involves writing clean, efficient code using HTML, CSS, and JavaScript ,MYSQL, AWS, JAVA. I also conduct testing and troubleshooting to ensure seamless functionality across different browsers and devices</p>
+
+                    </ul>
+                </div>   
+
+                <div class="tab-contains" id="education">
+                    <ul>
+                        <li><span>2019 - 2022</span><br>BCA from VSICS Kanpur</li>
+                        <li><span>2013 - 2025</span><br>MCA from GLA University Mathura </li>
+
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------------Services--------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis alias optio sint deleniti quasi quam iusto necessitatibus, maxime harum. Veritatis?</p>
+                    <a href="#">Click here</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis alias optio sint deleniti quasi quam iusto necessitatibus, maxime harum. Veritatis?</p>
+                    <a href="#">Click here</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis alias optio sint deleniti quasi quam iusto necessitatibus, maxime harum. Veritatis?</p>
+                    <a href="#">Click here</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------Portfolio----------------------------- -->
+     <div id="portfolio">
+        <div class="container"></div>
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Image.jpg" alt="my work">
+                <div class="layer">
+                    <h3>Social media App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit velit possimus voluptates aspernatur adipisci nesciunt!</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Image.jpg" alt="my work">
+                <div class="layer">
+                    <h3>Social media App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit velit possimus voluptates aspernatur adipisci nesciunt!</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Image.jpg" alt="my work">
+                <div class="layer">
+                    <h3>Social media App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit velit possimus voluptates aspernatur adipisci nesciunt!</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a class="btn" href="#">See more</a>
+     </div>
+
+     <!-- ------------------------Contact------------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>abhishek.dwivedi@coforge.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8081335938</p>
+                    <div class="socail-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download="" class="cv-btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="enter email" required>
+                        <textarea name="Message" rows="6" placeholder="your message" ></textarea>
+                        <button type="submit" class="btn cv-btn">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="copyrigh">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Abhishek. Made with by <i class="fa-solid fa-heart"></i>abhishek Dwivedi</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
